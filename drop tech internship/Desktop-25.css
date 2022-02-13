@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overflow: hidden;
+    background-color: black;
+  }
+  .topnav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .left {
+    margin-left: 60px;
+  }
+  
+  .right a {
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+  
+  }
+  
+  .right a:hover {
+    text-decoration: underline;
+  }
+  
+  .icon {
+    display: none;
+  }
+  
+  
+  #home25::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.99;
+  }
+  
+  .drone25 img {
+    width: 641px;
+    height: 356px;
+    margin: 6px 713px;
+    position: absolute;
+    margin-top: 100px;
+  }
+  
+  #home25::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+  }
+  
+ 
+  .clock {
+    position: absolute;
+    top: 500px;
+    left: 350px;
+    width: 350px;
+    opacity: 0;
+    animation: textanimationclock 3s forwards;
+  }
+  .phoneclock {
+    width: 80vw;
+    height: 60vh;
+    border: 2px solid white;
+    display: none;
+  }
+  
+  .phoneclock img {
+    height: 98%;
+      width: 100%;
+  }
+  @keyframes textanimationclock {
+    100% {
+      opacity: 1;
+      transform: translateY(-380px);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .right a:not(:last-child) {
+      display: none;
+    }
+  
+    .icon {
+      display: inline-block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {
+      position: relative;
+      height: 120px;
+      display: block;
+      padding: 10px;
+    }
+  
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 30px;
+      top: 10px;
+    }
+  
+    .topnav.responsive .right a {
+      display: block;
+      text-align: right;
+      margin: 4px;
+  
+    }
+    .clock{
+        display: none;
+    }
+    .drone25 img{
+        z-index: -1;
+        margin-top: 0vh;
+        width: 79vw;
+        height: 22vh;
+        /* margin: 45% 13%; */
+        margin-top: 48vh;
+        margin-left: 10.5vw;
+        position: absolute
+      }
+    .phoneclock {
+        display: contents;
+        margin: 8vw auto;
+        
+    
+      }
+    
+      .phoneclock img {
+        margin-top: 0vh;
+        margin-left: 1vw;
+        width: 100vw;
+        height: 48vh;
+      }
+      
+      .phoneclock h2{
+        color: white;
+        font-size: 2vh;
+        margin-top: 1vh;
+        margin-left: 42vw;
+      }
+}
