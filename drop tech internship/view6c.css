@@ -1,0 +1,286 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+i {
+    color: white;
+}
+
+.topnav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 8vh;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.left {
+    margin-left: 60px;
+}
+
+.right a {
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    display: none;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.pre {
+    width: 100vw;
+    height: 94vh;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    top: 7vh;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.open {
+    animation: ayo 2s ease-out;
+}
+
+.close {
+    animation: ayo1 1s ease-out;
+}
+
+@keyframes ayo1 {
+    0% {
+        opacity: 1;
+        clip-path: circle(800px);
+        -webkit-clip-path: circle(800px);
+    }
+
+    50% {
+        opacity: 1;
+
+        clip-path: circle(500px);
+        -webkit-clip-path: circle(500px);
+    }
+
+    100% {
+        opacity: 0;
+        background-color: gray;
+        clip-path: circle(10%);
+        -webkit-clip-path: circle(10%);
+    }
+}
+
+@keyframes ayo {
+    0% {
+        opacity: 0;
+        background-color: gray;
+        clip-path: circle(10%);
+        -webkit-clip-path: circle(10%);
+    }
+
+    50% {
+        opacity: 0.5;
+        background-color: black;
+        clip-path: circle(500px);
+        -webkit-clip-path: circle(500px);
+    }
+
+    100% {
+        opacity: 0.8;
+        clip-path: circle(1000px);
+        -webkit-clip-path: circle(1000px);
+    }
+}
+
+.pre div {
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.pre a {
+    color: white;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.pre a:hover {
+    text-decoration: underline;
+}
+
+.preview {
+    display: none;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+}
+
+#home::before {
+    content: "";
+    background-color: #b0e7ff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.99;
+    overflow-y: hidden;
+    animation: sky 5.5s 2s forwards;
+}
+
+
+
+.city img {
+    position: absolute;
+    bottom: 0px;
+    left: 180px;
+}
+
+
+
+.drone2 img {
+    width: 36vw;
+    height: 39vh;
+    position: absolute;
+    margin: 6px 713px;
+    animation: fly 1s infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes fly {
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+#home2::before {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.sun {
+    position: relative;
+
+    width: 79px;
+    height: 79px;
+
+    top: 42vh;
+    left: 86vw;
+    background-color:
+        #FFC700;
+    /* box-shadow: 2px 2px 2px orange; */
+    border-radius: 50%;
+    overflow: hidden;
+    animation: move 10s infinite forwards;
+
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(-20deg) translateX(-34vw) translateY(-70vh) rotate(-37deg);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .right a:not(:last-child) {
+        display: none;
+    }
+
+    .icon {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .left {
+        margin-left: 30px;
+    }
+
+    .home {
+        display: block;
+    }
+
+    .drone2 img {
+
+        width: 62vw;
+        height: 25vh;
+        margin: 18vw;
+        position: absolute;
+        animation: fly 1s infinite;
+        animation-delay: 0.5s;
+        margin-top: 18vh;
+    }
+
+    .city img {
+        position: absolute;
+        bottom: 0vh;
+        height: 30vh;
+        width: 100vw;
+        left: -2vw;
+        animation: sky1 3s forwards;
+    }
+
+    .sun {
+        /* visibility: hidden; */
+        position: relative;
+
+        width: 14vw;
+        height: 14vw;
+
+        top: 23vh;
+        left: 79vw;
+        background-color:
+            #FFC700;
+        /* box-shadow: 2px 2px 2px orange; */
+        border-radius: 50%;
+        overflow: hidden;
+        animation: move1 10s infinite forwards;
+
+    }
+
+    @keyframes move1 {
+        0% {
+            transform: rotate(-19deg) translateX(-25vw) translateY(-25vh) rotate(-37deg);
+        }
+    }
+}
