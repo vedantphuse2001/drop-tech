@@ -274,7 +274,7 @@ i {
         /* box-shadow: 2px 2px 2px orange; */
         border-radius: 50%;
         overflow: hidden;
-        animation: move1 10s infinite forwards;
+        animation: move1 6s  forwards;
 
     }
 
