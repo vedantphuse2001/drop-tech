@@ -221,7 +221,7 @@
     }
     .city img {
         position: absolute;
-        bottom: 15px;
+        bottom: 0px;
         height: 30vh;
         width: 100vw;
         left: -2vw;
