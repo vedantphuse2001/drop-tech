@@ -150,6 +150,7 @@
     margin: 6px 713px;
     animation: fly 1s infinite;
     animation-delay: 0.5s;
+       z-index: 20;
   }
   
   @keyframes fly {
@@ -218,6 +219,7 @@
         animation: fly 1s infinite;
         animation-delay: 0.5s;
         margin-top: 18vh;
+         z-index: 20;
     }
     .city img {
         position: absolute;
