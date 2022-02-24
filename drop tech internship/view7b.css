@@ -220,6 +220,9 @@ i {
 }
 
 @media screen and (max-width: 600px) {
+    body{
+    overflow:hidden;
+    }
     .right a:not(:last-child) {
         display: none;
     }
