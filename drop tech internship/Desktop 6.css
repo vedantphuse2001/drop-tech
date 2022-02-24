@@ -187,6 +187,7 @@ i {
     position: absolute;
     animation: fly 1s infinite;
     animation-delay: 0.5s;
+     z-index: 20;
 }
 
 @keyframes sky {
@@ -252,6 +253,7 @@ i {
         animation: fly 1s infinite;
         animation-delay: 0.5s;
         margin-top: 18vh;
+         z-index: 20;
     }
 
 }
