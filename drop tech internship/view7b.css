@@ -252,7 +252,7 @@ i {
 
     .city img {
         position: absolute;
-        bottom: 1px;
+        bottom:0vh;
         height: 30vh;
         width: 100vw;
         left: -2vw;
